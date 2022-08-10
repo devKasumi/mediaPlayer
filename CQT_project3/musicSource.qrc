@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Music/Daisy-StereoDiveFoundation.mp3</file>
+        <file>Music/I-don't-wanna-love-somebody-else-A-great-big-world.mp3</file>
+        <file>Music/Masayoshi-Soken-Close-In-The-Distance-FFXIV-Ultima-Thule.mp3</file>
+    </qresource>
+</RCC>
