@@ -187,7 +187,10 @@ Item {
             if (shuffer.status == 1){
                 shuffer.status = 0
             }
-            else shuffer.status = 1
+            else {
+                shuffer.status = 1
+                player.playlist.playbackMode = Playlist.Random
+            }
         }
     }
     ButtonControl {
@@ -265,7 +268,10 @@ Item {
             if (repeater.status == 1){
                 repeater.status = 0
             }
-            else repeater.status = 1
+            else {
+                repeater.status = 1
+                player.playlist.playbackMode = Playlist.CurrentItemInLoop
+            }
         }
     }
     Connections{
