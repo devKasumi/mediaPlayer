@@ -11,6 +11,7 @@
 #include <QFileDialog>
 #include <QCommandLineParser>
 #include <QMediaPlayer>
+#include "translation.h"
 
 
 int main(int argc, char *argv[])
@@ -23,12 +24,15 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+    Translation translator(&app);
+    translator.setCurrentLanguage("us");
 
     Player player;
 
     engine.rootContext()->setContextProperty("MyModel", player.m_playlistModel);
     engine.rootContext()->setContextProperty("player", player.m_player);
     engine.rootContext()->setContextProperty("utility", &player);
+    engine.rootContext()->setContextProperty("translator", &translator);
 
 
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));

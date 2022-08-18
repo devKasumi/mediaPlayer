@@ -31,5 +31,10 @@
         <file>Image/title.png</file>
         <file>Image/USB Mussic.png</file>
         <file>Image/album_art.png</file>
+        <file>Image/us.png</file>
+        <file>Image/vn.png</file>
+        <file>Image/drawer.png</file>
+        <file>Image/drawer_p.png</file>
+        <file>Image/back.png</file>
     </qresource>
 </RCC>

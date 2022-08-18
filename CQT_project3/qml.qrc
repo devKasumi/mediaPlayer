@@ -3,5 +3,12 @@
         <file>main.qml</file>
         <file>ButtonControl.qml</file>
         <file>SwitchButton.qml</file>
+        <file>AppHeader.qml</file>
+        <file>MediaInfoControl.qml</file>
+        <file>PlaylistView.qml</file>
+        <file>translator/string_us.qm</file>
+        <file>translator/string_us.ts</file>
+        <file>translator/string_vn.qm</file>
+        <file>translator/string_vn.ts</file>
     </qresource>
 </RCC>

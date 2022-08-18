@@ -11,7 +11,8 @@ QT += widgets
 SOURCES += \
         main.cpp \
         player.cpp \
-        playlistmodel.cpp
+        playlistmodel.cpp \
+        translation.cpp
 
 RESOURCES += qml.qrc \
     imageSource.qrc
@@ -33,8 +34,12 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+TRANSLATIONS += string_vn.ts \
+                string_us.ts
+
 DISTFILES +=
 
 HEADERS += \
     player.h \
-    playlistmodel.h
+    playlistmodel.h \
+    translation.h
